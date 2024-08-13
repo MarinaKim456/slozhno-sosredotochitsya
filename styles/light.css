@@ -3,10 +3,100 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
+:root.theme_light {
+  --accent-color: #FFC2E6;
+  --header-decor-color: transparent;  
+  --title-accent-color: #353430;
+  --text-color: #353430;
+  --buttons-and-corners-color: #353430;
+  --title-color: var(--text-color);
+  --title-decor: #FF8DCB;
+  --bgi: url(../images/cover-image-light.png);
+  color-scheme: light;
+}
 
 .page.theme_light {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+   background-image: var(--bgi);
+}
+
+/* .REC_container_dot::before {
+  content: "";
+  display: none;
+}
+
+.REC_container_dot::after {
+  content: "";
+  display: none;
+} */
+
+.header::before {
+  border-top: 2px solid var(--buttons-and-corners-color);
+  border-right: 2px solid var(--buttons-and-corners-color);
+}
+
+ .header::after {
+  border-bottom: 2px solid var(--buttons-and-corners-color);
+  border-left: 2px solid var(--buttons-and-corners-color);
+} 
+
+.header__theme-menu-button {
+  background-color: transparent;
+  border: none;
+  color: var(--buttons-and-corners-color);
+}
+
+.header__theme-menu-button:hover {
+  outline: 1px solid var(--buttons-and-corners-color);
+}
+
+.header__theme-menu-button:focus-visible{
+  border-bottom: 1px solid var(--buttons-and-corners-color);
+}  
+
+.header_text {
+  background-color: var(--title-decor);
+  color: var(--title-color); 
+}
+
+.content_paragraph_title,  
+.content_paragraph_subtitle,    
+.content__paragraph_item_title,
+.content-card_title,
+.content_card_list_title,
+.gallery_title {
+  color: var(--title-color); 
+  background-color: var(--title-decor);  
+}
+
+.content_paragraph_title,
+.content_card_list_title {
+  background-color: transparent;
+  color: var(--title-accent-color); 
+}
+
+.researches-link:hover {
+  text-decoration: underline;
+}
+
+.researches-link:focus{
+  border: transparent;
+  outline: none;
+}
+
+.researches-link:focus-visible{
+  outline: 1px solid var(--text-color);
+}
+
+.footer::before {
+  border-top: 2px solid var(--buttons-and-corners-color);
+  border-right: 2px solid var(--buttons-and-corners-color);
+}
+
+ .footer::after {
+  border-bottom: 2px solid var(--buttons-and-corners-color);
+  border-left: 2px solid var(--buttons-and-corners-color);
 }
