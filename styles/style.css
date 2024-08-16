@@ -50,6 +50,10 @@
   --hover-color: rgb(0 0 40 / 0.4);
 }
 
+html {
+  font-size: 18px;
+}
+
 h3,
 h4 {
   margin-block-end: 10px;
@@ -612,18 +616,18 @@ h4 {
   }
 
   .REC_container_dot::before {
-    right: 47px;
-    top: 6px;
+    right: 48px;
+    top: 14px;
   }
 
   .REC_container_dot::after {
-    right: 25px;
-    top: 10px;
+    right: 29px;
+    top: 18px;
   }
 
   .header::before {
-    top: 7px;
-    right: 20px;
+    top: 13px;
+    right: 19px;
   }
 
   .header::after {
@@ -643,7 +647,7 @@ h4 {
     display: flex;
     margin-block-start: 5px;
     margin-inline-end: 0;
-    gap: 19px;
+    gap: 17px;
   }
 
   .header__theme_title {    
