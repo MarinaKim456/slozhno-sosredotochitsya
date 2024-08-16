@@ -73,7 +73,6 @@ h4 {
   margin: 0 auto;
   font-family: 'IBM Plex Mono', Helvetica, Arial, sans-serif;
   font-size: 18px;
-  /* padding-block-start: 10px; */
   position: relative;
   background-image: var(--bgi);
   background-repeat: no-repeat;
@@ -122,7 +121,7 @@ h4 {
 .header {
   position: relative;
   display: grid;
-  grid-template-rows: min-content 1fr min-content 1fr;
+  grid-template-rows: 1fr min-content 1fr;
   min-height: 668px;
   height: 100vh;
   padding-bottom: 75px;
@@ -164,7 +163,6 @@ h4 {
   width: 25px;
   border-top: 2px solid var(--main-color);
   border-right: 2px solid var(--main-color);
-  /* top: 0px; */
   right: 10px;
 }
 
@@ -177,7 +175,6 @@ h4 {
   border-left: 2px solid var(--main-color);
   bottom: 20px;
   left: 10px;
-  /* margin-block-end: 10px; */
 }
 
 .header__theme-menu {
@@ -228,6 +225,9 @@ h4 {
 .header__theme_title,
 .footer_title {
   font-family: inherit;
+  -webkit-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  -moz-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  -ms-user-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-weight: bold;
   line-height: 82.5%;
@@ -401,6 +401,9 @@ h4 {
 @media (min-width: 376px) and (max-width: 580px) {
 
   .header__theme_title {
+    -webkit-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    -moz-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    -ms-user-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     background-position: 50% center;
     transition: 1s;
@@ -491,7 +494,10 @@ h4 {
   }
 
   .header__theme_title {
-    font-size: 120px;
+    -webkit-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    -moz-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    -ms-user-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     margin-block-start: 173px;
     margin-block-end: 162px;
     margin-inline-start: 0;
@@ -515,10 +521,6 @@ h4 {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 2fr;
   }
-
-  /* .content_paragraph_title {
-    padding-inline-start: 20px;
-  } */
 
   .content_card_list {
     margin-block-end: 36px;
@@ -545,8 +547,6 @@ h4 {
     display: grid;
     gap: 21px;
     margin-block-end: 28px;
-    /* margin-inline-start: 20px;
-    margin-inline-end: 20px; */
   }
 
   .gallery_title {
@@ -646,10 +646,11 @@ h4 {
     gap: 19px;
   }
 
-  .header__theme_title {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  .header__theme_title {    
     -webkit-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     -moz-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    -ms-user-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     margin-inline-start: 0;
     margin-block-start: 273px;
     margin-block-end: 114px;
