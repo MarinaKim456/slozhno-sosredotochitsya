@@ -3,32 +3,30 @@
   и их переопределение под различные устройства
 */
 
-@media (prefers-color-scheme: dark) {
-
-  :root {
-    --accent-color: #db00ff;
-    --title-decor: #ff0070;
-    --title-accent-color: #ff0070;
-    --buttons-and-corners-color: var(--title-decor);
-    --title-color: #000028;
-    --text-color: #f1b2ce;
-    --bgi: url(../images/cover-image-dark.png);
-    --header-decor-color: var(--title-decor);
-    color-scheme: dark;
-  }
+.theme_dark {
+  color-scheme: dark;
+  --bgi: url(../images/cover-image-dark.png);
+  --main-color: #ff0070;
+  --accent-color: #db00ff;
+  --header-title-color: #db00ff;
+  --shadow-accent-color: var(--main-color);
+  --text-color: #f1b2ce;
+  --title-color: #000028;
+  --title-decor: var(--main-color);
+  --header-decor-color: var(--main-color);
+  --hover-color: rgb(255 0 112 / 0.4);
 }
 
-@media (prefers-color-scheme: light) {
-
-  :root {
-    --accent-color: #ffc2e6;
-    --header-decor-color: transparent;
-    --title-accent-color: #353430;
-    --text-color: #353430;
-    --buttons-and-corners-color: #353430;
-    --title-color: var(--text-color);
-    --title-decor: #ff8dcb;
-    --bgi: url(../images/cover-image-light.png);
-    color-scheme: light;
-  }
+.theme_light {
+  color-scheme: light;
+  --bgi: url(../images/cover-image-light.png);
+  --main-color: #353430;
+  --accent-color: #ffc2e6;
+  --header-title-color: #ffc2e6;
+  --text-color: var(--main-color);
+  --title-color: var(--main-color);
+  --title-decor: #ff8dcb;
+  --shadow-accent-color: var(--title-decor);
+  --header-decor-color: transparent;
+  --hover-color: rgb(0 0 40 / 0.4);
 }

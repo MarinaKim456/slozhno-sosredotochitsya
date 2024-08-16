@@ -13,7 +13,9 @@
   --text-color: var(--main-color);
   --title-color: var(--main-color);
   --title-decor: #ff8dcb;
+  --shadow-accent-color: var(--title-decor);
   --header-decor-color: transparent;
+  --hover-color: rgb(0 0 40 / 0.4);
 }
 
 .page.theme_light {

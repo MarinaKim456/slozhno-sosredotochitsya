@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="color-scheme" content="dark light" />
+    <meta
+      name="description"
+      content="Статья о сложностях с концентрацией внимания и методах ее повышения"
+    />
 
     <title>Сложно сосредоточиться</title>
     <link rel="stylesheet" href="./styles/globals.css" />
@@ -15,7 +19,8 @@
     <link rel="stylesheet" href="./styles/light.css" />
     <meta name="color-scheme" content="dark light" />
     <link rel="icon" href="./images/favicon.ico" sizes="any" />
-    <!-- <link rel="icon" href="./images/favicon.svg" sizes="svg" /> -->
+    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./images/favicon.svg" />
   </head>
   <body class="page">
     <header class="header decorated-zone">
@@ -24,6 +29,7 @@
         <ul class="header__theme-menu-list">
           <li class="header__theme-menu-item">
             <button
+              aria-label="Установить светлую тему"
               class="header__theme-menu-button header__theme-menu-button_type_light"
             >
               День
@@ -31,6 +37,7 @@
           </li>
           <li class="header__theme-menu-item">
             <button
+              aria-label="Установить цвет темы как в системе"
               class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto"
               disabled
             >
@@ -39,6 +46,7 @@
           </li>
           <li class="header__theme-menu-item">
             <button
+              aria-label="Установить темную тему"
               class="header__theme-menu-button header__theme-menu-button_type_dark"
             >
               Неон
@@ -219,7 +227,7 @@
               src="./images/sunset.png"
               loading="lazy"
               alt="Море, чайки и солнце, опускающееся за горы"
-            >
+            />
           </picture>
           <picture class="image_container food_image">
             <img
@@ -227,7 +235,7 @@
               src="./images/ice-cream.png"
               loading="lazy"
               alt="Миска с мороженым, украшенным разнообразными сладостями"
-            >
+            />
           </picture>
           <picture class="image_container music_image">
             <img
@@ -235,7 +243,7 @@
               src="./images/tape.png"
               loading="lazy"
               alt="Компакт-кассета"
-            >
+            />
           </picture>
           <picture class="image_container read_image">
             <img
@@ -243,7 +251,7 @@
               src="./images/books.png"
               loading="lazy"
               alt="Стопка книг с чашкой кофе"
-            >
+            />
           </picture>
           <picture class="image_container walk_image">
             <img
@@ -251,7 +259,7 @@
               src="./images/street.png"
               loading="lazy"
               alt="Вечерняя дорога вдоль зданий, ведущая в парк"
-            >
+            />
           </picture>
         </div>
       </div>
@@ -262,4 +270,3 @@
     <script src="./scripts/script.js"></script>
   </body>
 </html>
-<!-- media="(prefers-color-scheme: dark)" -->

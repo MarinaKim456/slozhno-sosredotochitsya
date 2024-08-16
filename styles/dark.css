@@ -10,11 +10,12 @@
   --main-color: #ff0070;
   --accent-color: #db00ff;
   --header-title-color: #db00ff;
-  --title-accent-color: var(--main-color);
+  --shadow-accent-color: var(--main-color);
   --text-color: #f1b2ce;
   --title-color: #000028;
   --title-decor: var(--main-color);
   --header-decor-color: var(--main-color);
+  --hover-color: rgb(255 0 112 / 0.4);
 }
 
 .page.theme_dark {
