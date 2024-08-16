@@ -645,7 +645,7 @@ h4 {
   }
 
   .header__theme_title {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    font-size: 157px;
     margin-inline-start: 0;
     margin-block-start: 273px;
     margin-block-end: 114px;
