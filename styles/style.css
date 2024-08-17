@@ -153,8 +153,7 @@ h4 {
   block-size: 13px;
   border-radius: 50%;
   background-color: var(--header-decor-color);
-  box-shadow: 00 4px 2px var(--main-color);
-  /* filter: blur(4px); */
+  box-shadow: 00 4px 2px var(--header-decor-color);
   right: 16px;
   top: 14px;
 }
@@ -422,6 +421,10 @@ h4 {
 
 @media (min-width: 580px) and (max-width: 718px) {
 
+  .header {
+    padding-block-end: 20px;
+  }
+
   .header_text_container {
     margin-inline-end: 20px;
     font-size: 1em;
@@ -602,37 +605,28 @@ h4 {
     font-size: clamp(1.125rem, 0.75rem + 0.7813vw, 1.25rem);
   }
 
-  .header,
-  .footer,
-  .main {
-    margin-inline-end: 0;
-  }
-
   .header {
-    min-height: 768px;
-    margin-block-end: 10px;
+    padding-block-end: 20px;
   }
 
   .REC_container_dot::before {
     right: 48px;
-    top: 14px;
+    top: 19px;
   }
 
   .REC_container_dot::after {
-    right: 29px;
-    top: 18px;
+    right: 27px;
+    top: 24px;
   }
 
   .header::before {
-    top: 13px;
-    right: 19px;
+    top: 18px;
+    right: 20px;
   }
 
   .header::after {
-    bottom: 13px;
-    left: 10px;
-    margin-inline-start: 10px;
-    margin-block-end: 20px;
+    bottom: 20px;
+    left: 20px;
   }
 
   .header__theme-menu {
@@ -643,20 +637,17 @@ h4 {
 
   .header__theme-menu-list {
     display: flex;
-    margin-block-start: 5px;
+    margin-block-start: 14px;
     margin-inline-end: 0;
-    gap: 17px;
+    gap: 19px;
   }
 
   .header__theme_title {
-    
     -webkit-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     -moz-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     -ms-user-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     margin-inline-start: 0;
-    margin-block-start: 273px;
-    margin-block-end: 114px;
     transition: 1s;
   }
 
@@ -666,7 +657,6 @@ h4 {
     justify-self: end;
     width: 48%;
     margin-inline-end: 20px;
-    margin-block-end: 134px;
     transition: 1s;
   }
 
@@ -718,7 +708,7 @@ h4 {
   }
 
   .content__text-block {
-    padding-block-start: 42px;
+    padding-block-start: 58px;
   }
 
   .gallery {
@@ -760,12 +750,12 @@ h4 {
   }
 
   .footer::before {
-    top: 18px;
-    right: 23px;
+    top: 20px;
+    right: 20px;
   }
 
   .footer::after {
     left: 10px;
-    bottom: 20px;
+    bottom: 18px;
   }
 }
