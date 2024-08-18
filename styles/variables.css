@@ -3,7 +3,7 @@
   и их переопределение под различные устройства
 */
 
-.theme_dark {
+:root {
   color-scheme: dark;
   --bgi: url(../images/cover-image-dark.png);
   --main-color: #ff0070;
@@ -17,16 +17,3 @@
   --hover-color: rgb(255 0 112 / 0.4);
 }
 
-.theme_light {
-  color-scheme: light;
-  --bgi: url(../images/cover-image-light.png);
-  --main-color: #353430;
-  --accent-color: #ffc2e6;
-  --header-title-color: #ffc2e6;
-  --text-color: var(--main-color);
-  --title-color: var(--main-color);
-  --title-decor: #ff8dcb;
-  --shadow-accent-color: var(--title-decor);
-  --header-decor-color: transparent;
-  --hover-color: rgb(0 0 40 / 0.4);
-}
