@@ -36,7 +36,7 @@ html {
   background-size: cover;
   background-position: center bottom;
   background-attachment: fixed;
-  overflow-x: hidden auto;  
+  overflow-x: hidden auto;
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
 
@@ -290,16 +290,6 @@ html {
   min-height: 668px;
   height: 100vh;
   background-color: transparent;
-}
-
-.decorated-zone::before {
-  top: 12px;
-  right: 10px;
-}
-
-.decorated-zone::after {
-  bottom: 10px;
-  left: 10px;
 }
 
 @media (min-width: 376px) and (max-width: 580px) {
